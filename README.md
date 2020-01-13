@@ -1,6 +1,6 @@
 # unreal_engine
 
-Watching video #19 - Variables
+Watching video #20 - const & Assigning Values
 
 Timestamp - 00:00:00
 
