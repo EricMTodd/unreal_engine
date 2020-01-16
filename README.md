@@ -1,6 +1,6 @@
 # unreal_engine
 
-Watching video #21 - Statements & Comments
+Watching video #23 - Naming and Self Documenting Code
 
 Timestamp - 00:00:00
 
