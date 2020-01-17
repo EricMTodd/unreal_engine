@@ -1,6 +1,6 @@
 # unreal_engine
 
-Watching video #26 - Functions
+Watching video #27 - Returning Data From Functions
 
 Timestamp - 00:00:00
 
@@ -17,7 +17,7 @@ You may see unnecessary warnings when compiling your program on Windows. If you 
 cl triplex.cpp
 
 Try adding /EHsc to the end of the command:
-cl main.cpp /EHsc
+cl triplex.cpp /EHsc
 
 For further reading: https://docs.microsoft.com/en-us/cpp/build/reference/eh-exception-handling-model?view=vs-2019
 
