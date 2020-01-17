@@ -23,7 +23,17 @@ int main()
     std::cout << "The numbers in the code add up to " << CodeSum << std::endl;
     std::cout << "The product of the numbers in the code is " << CodeProduct << std::endl;
 
-    int PlayerGuess;
+    int GuessA, GuessB, GuessC;
+    std::cout << "Please guess the code: " << std::endl;
+    std::cin >> GuessA;
+    std::cin >> GuessB;
+    std::cin >> GuessC;
+    std::cout << "Your guess: " << GuessA << GuessB << GuessC << std::endl;
+
+    int GuessSum = GuessA + GuessB + GuessC;
+    int GuessProduct = GuessA * GuessB * GuessC;
+    std::cout << "The sum of your guess is " << GuessSum << std::endl;
+    std::cout << "The product of your guess is " << GuessProduct;
 
     return 0;
 }
