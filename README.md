@@ -1,6 +1,6 @@
 # unreal_engine
 
-Watching video #25 - Using if and else in C++
+Watching video #26 - Functions
 
 Timestamp - 00:00:00
 
