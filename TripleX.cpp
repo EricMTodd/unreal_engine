@@ -8,7 +8,7 @@ void PrintIntroduction()
     std::cout << "\nYou reach for the note torn from the scientist's journal and it all comes together...";
 }
 
-void PlayGame()
+bool PlayGame()
 {
     PrintIntroduction();
 
@@ -23,7 +23,7 @@ void PlayGame()
     // Print sum and product to the terminal
     std::cout << "\n\nThere are three numbers in the code";
     std::cout << "\nThe numbers in the code add up to " << CodeSum;
-    std::cout << "\nThe product of the numbers in the code is " << CodeProduct ;
+    std::cout << "\nThe product of the numbers in the code is " << CodeProduct;
 
     // Store player guess
     int GuessA, GuessB, GuessC;
@@ -41,15 +41,23 @@ void PlayGame()
     if (GuessSum == CodeSum && GuessProduct == CodeProduct)
     {
         std::cout << "\n\nYou pop the lock, and throw open the door at a dead sprint into the night!\n";
+        return true;
     }
     else
     {
         std::cout << "\n\nThe guards have caught you, they beat you into unconsciousness...\n";
+        return false;
     }
 }
 
 int main()
 {
-    PlayGame();
+    while (true)
+    {
+        bool bLevelComplete = PlayGame();
+        std::cin.clear();
+        std::cin.ignore();
+    }
+
     return 0;
 }
