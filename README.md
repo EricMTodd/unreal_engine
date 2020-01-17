@@ -2,7 +2,7 @@
 
 Watching video #29 - Comparing Values
 
-Timestamp - 00:00:00
+Timestamp - 00:04:07
 
 ## NOTES
 
