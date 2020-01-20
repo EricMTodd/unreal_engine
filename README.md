@@ -1,6 +1,6 @@
 # unreal_engine
 
-Watching video #29 - Comparing Values
+Watching video #30 - Generating Random Number Ranges
 
 Timestamp - 00:04:07
 
