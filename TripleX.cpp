@@ -1,12 +1,10 @@
 #include <iostream>
+#include <ctime>
 
 void PrintIntroduction(int Difficulty)
 {
     // Print welcom messages to the terminal
-    std::cout << "\nYou've just stolen a pricelss artifact worth untold riches, you can hear the guards running towards you just around the corner.";
-    std::cout << "\nYou are desperately trying pick a lock with " << Difficulty;
-    std::cout << " tumblers that bars your escape.";
-    std::cout << "\nYou reach for the note torn from the scientist's journal and it all comes together...";
+    std::cout << "\nYou're currently on tumbler " << Difficulty << ".";
 }
 
 bool PlayGame(int Difficulty)
@@ -14,17 +12,17 @@ bool PlayGame(int Difficulty)
     PrintIntroduction(Difficulty);
 
     // Declare 3 number code
-    const int CodeA = rand();
-    const int CodeB = rand();
-    const int CodeC = rand();
+    const int CodeA = rand() % Difficulty + Difficulty;
+    const int CodeB = rand() % Difficulty + Difficulty;
+    const int CodeC = rand() % Difficulty + Difficulty;
 
     const int CodeSum = CodeA + CodeB + CodeC;
     const int CodeProduct = CodeA * CodeB * CodeC;
 
     // Print sum and product to the terminal
-    std::cout << "\n\nThere are three numbers in the code";
-    std::cout << "\nThe numbers in the code add up to " << CodeSum;
-    std::cout << "\nThe product of the numbers in the code is " << CodeProduct;
+    std::cout << "\n\nThere are three numbers in the code.";
+    std::cout << "\nThe numbers in the code add up to " << CodeSum << ".";
+    std::cout << "\nThe product of the numbers in the code is " << CodeProduct << ".";
 
     // Store player guess
     int GuessA, GuessB, GuessC;
@@ -53,6 +51,12 @@ bool PlayGame(int Difficulty)
 
 int main()
 {
+    std::cout << "\nYou've just stolen a pricelss artifact worth untold riches.";
+    std::cout << "\nYou're desperately trying to pick the lock on a door that bars your escape; it has 5 tumblers.";
+    std::cout << "\nYou reach for the note torn from a scientist's journal and it all comes together...";
+
+    srand(time(NULL)) // Create new random sequence based on time of day
+
     int LevelDifficulty = 1;
     const int MaxLevel = 5;
 
