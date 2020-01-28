@@ -1,8 +1,8 @@
 # unreal_engine
 
-Watching video #30 - Generating Random Number Ranges
+Watching video #45 - Using The In Game Terminal
 
-Timestamp - 00:04:07
+Timestamp - 00:00:00
 
 ## NOTES
 
