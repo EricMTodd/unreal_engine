@@ -55,7 +55,7 @@ int main()
     std::cout << "\nYou're desperately trying to pick the lock on a door that bars your escape; it has 5 tumblers.";
     std::cout << "\nYou reach for the note torn from a scientist's journal and it all comes together...";
 
-    srand(time(NULL)) // Create new random sequence based on time of day
+    srand(time(NULL)); // Create new random sequence based on time of day
 
     int LevelDifficulty = 1;
     const int MaxLevel = 5;

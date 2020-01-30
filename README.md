@@ -1,6 +1,6 @@
 # unreal_engine
 
-Watching video #45 - Using The In Game Terminal
+Watching video #46 - Unreal's Types - FString
 
 Timestamp - 00:00:00
 
